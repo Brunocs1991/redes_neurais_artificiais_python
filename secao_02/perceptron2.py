@@ -12,11 +12,11 @@ s = soma(entradas, pesos)
 print(s)
 
 
-def stepFunction(s):
+def step_function(s):
     if (s >= 1):
         return 1
     return 0
 
 
-r = stepFunction(s)
+r = step_function(s)
 print(r)
