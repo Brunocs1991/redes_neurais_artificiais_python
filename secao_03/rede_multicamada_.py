@@ -54,5 +54,8 @@ for j in range(epocas):
     media_absoluda = np.mean(np.abs(erro_camada_saida))
     derivada_saida = sigmoid_derivada(camada_saida)
     delta_saida = erro_camada_saida * derivada_saida
-    print(delta_saida)
+    pesos_1_transpostas = pesos_1.T
+    delta_saida_x_pesos = delta_saida.dot(pesos_1_transpostas)
+    delta_camada_oculta = delta_saida_x_pesos * sigmoid_derivada(camada_oculta)
+    print(delta_camada_oculta)
     break
