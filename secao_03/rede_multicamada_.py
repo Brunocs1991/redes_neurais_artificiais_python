@@ -52,4 +52,7 @@ for j in range(epocas):
     camada_saida = sigmoid(soma_sinapse_1)
     erro_camada_saida = saidas - camada_saida
     media_absoluda = np.mean(np.abs(erro_camada_saida))
+    derivada_saida = sigmoid_derivada(camada_saida)
+    delta_saida = erro_camada_saida * derivada_saida
+    print(delta_saida)
     break
