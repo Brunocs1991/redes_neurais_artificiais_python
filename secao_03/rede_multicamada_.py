@@ -44,8 +44,8 @@ saidas = np.array(
 
 pesos_0 = 2*np.random.random((2, 3)) - 1
 pesos_1 = 2*np.random.random((3, 1)) - 1
-epocas = 100000
-taxa_aprendizagem = 0.5
+epocas = 10000
+taxa_aprendizagem = 0.6
 momento = 1
 
 for j in range(epocas):
